@@ -55,3 +55,8 @@ padding: 0 1.5rem;
     font-family: "Muli-Bold";
     font-weight: 700;
 }
+@media (max-width:767px) {
+    .test-sec>img {
+        display: none;
+    }
+}

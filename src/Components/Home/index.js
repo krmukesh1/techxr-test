@@ -9,7 +9,7 @@ import Arrow from "../assets/images/blue-arrow.svg";
 import { Link } from "react-router-dom";
 
 import "./style.css";
-import { Review, Video } from "..";
+import {  Review, Video } from "..";
 export const Home = () => {
   const [name, setName] = useState();
   const [email, setEmail] = useState();

@@ -67,4 +67,9 @@ li.nav-item {
   font-size: 18px;
   font-weight: 600;
 }
+.main-nav a {
+  padding: 10px 0;
+  color: #fff;
+  cursor: pointer;
+}
 }

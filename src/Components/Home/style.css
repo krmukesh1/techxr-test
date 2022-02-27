@@ -181,7 +181,23 @@ img, svg {
     padding-top: 100px;
     padding-bottom: 180px;
 }
+.banner_main{
+    margin-top: -30%;
+}
+@media (max-width:1025px){
+    .banner_main {
+        margin-top: 0%;
+    }
+    .head-content h1 {
+        font-size: 40px;
+    }
+}
 @media (max-width:767px){
+    .banner_main {
+        margin-top: -20%;
+    }
+    
+
     .c-card {
         padding: 3em 2em;
         box-shadow: 0px 100px 99px 0px rgb(31 72 93 / 20%);
@@ -197,6 +213,3 @@ img, svg {
     }
 }
 
-.banner_main{
-    margin-top: -30%;
-}

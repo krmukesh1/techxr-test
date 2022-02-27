@@ -58,7 +58,7 @@ export const Review = () => {
                         <p className="card-text pt-3">
                           "The course overall was a very good and amazing
                           learning experience. I wanna thank team TechXR for all
-                          the hard-work and hours they put in with us."
+                          the hard-work and hours they put in us."
                         </p>
                       </div>
                     </div>

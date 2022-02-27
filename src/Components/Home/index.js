@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Home1 from "../assets/images/h-img01.svg";
 import Home2 from "../assets/images/h-img02.svg";
 import Wave from "../assets/images/c-wave-bg.svg";
@@ -11,60 +11,70 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import { Review, Video } from "..";
 export const Home = () => {
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [number, setNumber] = useState();
+  const formSubmit = (e) => {
+    e.preventDefault();
+    alert(`${name} ${email} ${number}`)
+  };
   return (
     <div className="banner_main">
       <div className="banner">
         <div className="banner-area">
-        <img src={Line} className="line-des" alt="Line" />
-        <div className="container">
-        <div className="row inner-banner align-items-center">
-          <div className="col-md-6">
-            <div className="head-content">
-              <h1>
-                Making Quality AR-VR Learning Easy - Affordable - Accessible
-              </h1>
-              <p className="para">
-                Join Our AR-VR Certification Program in Association with iHub
-                DivyaSampark @ IIT Roorkee​
-              </p>
+          <img src={Line} className="line-des" alt="Line" />
+          <div className="container">
+            <div className="row inner-banner align-items-center">
+              <div className="col-md-6">
+                <div className="head-content">
+                  <h1>
+                    Making Quality AR-VR Learning Easy - Affordable - Accessible
+                  </h1>
+                  <p className="para">
+                    Join Our AR-VR Certification Program in Association with
+                    iHub DivyaSampark @ IIT Roorkee
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-6 ">
+                <form
+                onSubmit={formSubmit}
+                  className="head-form c-card"
+                  id="myform"
+                >
+                  <h4 className="head text-center mb-5">Explore Courses</h4>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      placeholder="Name"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      title="Please enter a valid email"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="number"
+                      placeholder="Mobile"
+                      id="contact"
+                      value={number}
+                      onChange={(e) => setNumber(e.target.value)}
+                      title="Please enter a valid number"
+                    />
+                  </div>
+                 <button className="main-btn" type="submit">Register</button>
+                </form>
+              </div>
             </div>
           </div>
-          <div className="col-md-6 ">
-            <form action="" className="head-form c-card" id="myform">
-              <h4 className="head text-center mb-5">Explore Courses</h4>
-              <div className="form-group">
-                <input type="text" placeholder="Name" name="name" />
-              </div>
-              <div className="form-group">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  name="email"
-                  title="Please enter a valid email"
-                />
-              </div>
-              <div className="form-group">
-                <input
-                  type="text"
-                  placeholder="Mobile"
-                  id="contact"
-                  name="contact"
-                  title="Please enter a valid number"
-                />
-              </div>
-              <div className="form-group">
-                <button
-                  type="button"
-                  className="main-btn shadow-btn btn-send-otp"
-                  id="verifyOTPbtn"
-                >
-                  Register Now
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
         </div>
       </div>
       <div className="h-sec-container">

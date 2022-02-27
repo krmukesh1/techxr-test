@@ -38,7 +38,42 @@ img.nav-logo {
     cursor: pointer;
 
 }
-@media(max-width:767px) {
+@media(max-width:1024px) {
+  .main-nav {
+    background-image: none;
+    height: 0vh;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+}
+.navbar {
+  color: #fff;
+  background-color: var(--blue);
+}
+img.nav-logo {
+  display: block;
+}
+.logo img {
+  width: 197px;
+  display: none;
+}
+img.nav-logo {
+  width: 130px;
+}
+li.nav-item {
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+.main-nav a {
+  padding: 10px 0;
+  color: #fff;
+  cursor: pointer;
+}
+}
+@media(max-width:600px) {
   .main-nav {
     background-image: none;
     height: 15vh;

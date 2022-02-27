@@ -4,27 +4,27 @@
 }
 @font-face {
   font-family: "Muli-Black";
-  src: url("../../../assets/fonts/Muli-Black.ttf");
+  src: url("../src/Components/assets/fonts/Muli-Black.ttf");
 }
 @font-face {
   font-family: "Muli-ExtraLight";
-  src: url("../../../assets/fonts/Muli-ExtraLight.ttf");
+  src: url("../src/Components/assets/fonts/Muli-ExtraLight.ttf");
 }
 @font-face {
   font-family: "Muli-Regular";
-  src: url("../../../assets/fonts/Muli-Regular.ttf");
+  src: url("../src/Components/assets/fonts/Muli-Regular.ttf");
 }
 @font-face {
   font-family: "Muli-SemiBold";
-  src: url("../../../assets/fonts/Muli-SemiBold.ttf");
+  src: url("../src/Components/assets/fonts/Muli-SemiBold.ttf");
 }
 @font-face {
   font-family: "Muli-Bold";
-  src: url("../../../assets/fonts/Muli-Bold.ttf");
+  src: url("../src/Components/assets/fonts/Muli-Bold.ttf");
 }
 @font-face {
   font-family: "Muli-ExtraBold";
-  src: url("../../../assets/fonts/Muli-ExtraBold.ttf");
+  src: url("../src/Components/assets/fonts/Muli-ExtraBold.ttf");
 }
 *{
   margin: 0;

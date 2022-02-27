@@ -1,0 +1,52 @@
+.projects-sec {
+    padding: 65px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.sec-head {
+    font-size: 30px;
+    color: #434343;
+    font-family: 'Muli-Bold';
+}
+.sub-head.blue {
+    color: var(--blue);
+}
+
+.sub-head {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+ .pr-vid-wrap {
+    background: #F7F7F7;
+    padding: 2em;
+    position: relative;
+}
+ .pr-det {
+    padding: 15px 20px;
+}
+ .pr-det h4 {
+    color: var(--dark);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+ .pr-det h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--blue);
+    position: relative;
+    padding-left: 60px;
+}
+ .pr-det h6:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50px;
+    height: 2px;
+    background: #AFAFAF;
+}

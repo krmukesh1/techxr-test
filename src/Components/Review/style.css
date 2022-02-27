@@ -1,0 +1,57 @@
+ .test-det-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+ .test-det-wrap img {
+    min-width: 50px;
+    width: 50px;
+}
+.test-wrap>img {
+    width: 100px;
+    margin: 30px 0 0 0px;
+}
+.test-wrap:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 6px;
+    background: #2CABE1;
+    max-width: 300px;
+}
+.test-wrap:nth-child(3):after {
+    background: #0F2B65 !important;
+}
+.test-wrap{
+box-shadow: 0 50px 99px 0 rgb(31 72 93 / 10%);
+padding: 0 1.5rem;
+}
+
+.test-wrap p {
+    color: #B1AAAA;
+    font-family: "Muli-Regular";
+    font-weight: 400;
+}
+.test-wrap .test-det-wrap .test-con h4 {
+    font-size: 16px;
+    font-family: "Muli-Bold";
+    font-weight: 700;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 0rem;
+}
+.sec-head {
+    font-size: 30px;
+    color: #434343;
+    font-family: "Muli-Bold";
+    font-weight: 700;
+}

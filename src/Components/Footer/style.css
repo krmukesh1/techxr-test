@@ -1,0 +1,127 @@
+.main-footer {
+  position: relative;
+  overflow: hidden;
+  background: #0f2b65;
+  padding: 80px 0px;
+  padding-bottom: 0;
+}
+.ft-logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 250px;
+}
+.ft-para {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.ft-head {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.ft-list {
+  margin-bottom: 25px;
+  padding-left: 0;
+}
+.ft-list li a {
+  display: inline-block;
+  padding: 5px 0px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: rgba(255, 255, 255, 0.7);
+}
+.ft-list li a:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--blue);
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.ft-list li a:hover {
+  color: var(--blue);
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
+  padding-left: 10px;
+}
+
+.ft-logo img {
+  width: 100%;
+}
+.main-footer .para {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.ft-btm {
+  position: relative;
+  background: var(--blue);
+  padding: 15px 0px;
+  margin-top: 65px;
+}
+.ft-btm p {
+  margin-bottom: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+.so-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+.so-list li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+.so-list li a:hover {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+.so-list li a i {
+    color: white;
+    font-size: 14px;
+}
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+}

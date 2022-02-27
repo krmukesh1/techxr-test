@@ -16,7 +16,14 @@ export const Home = () => {
   const [number, setNumber] = useState();
   const formSubmit = (e) => {
     e.preventDefault();
-    alert(`${name} ${email} ${number}`)
+    if (name === "" || email === "" || number === "") {
+      alert("Plz filled Data");
+    } else {
+      alert(`${name} ${email} ${number}`);
+    }
+    setName("")
+    setEmail("")
+    setNumber("")
   };
   return (
     <div className="banner_main">
@@ -38,7 +45,7 @@ export const Home = () => {
               </div>
               <div className="col-md-6 ">
                 <form
-                onSubmit={formSubmit}
+                  onSubmit={formSubmit}
                   className="head-form c-card"
                   id="myform"
                 >
@@ -70,7 +77,9 @@ export const Home = () => {
                       title="Please enter a valid number"
                     />
                   </div>
-                 <button className="main-btn" type="submit">Register</button>
+                  <button className="main-btn" type="submit">
+                    Register
+                  </button>
                 </form>
               </div>
             </div>

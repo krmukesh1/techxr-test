@@ -11,9 +11,9 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import {  Review, Video } from "..";
 export const Home = () => {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [number, setNumber] = useState();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
   const formSubmit = (e) => {
     e.preventDefault();
     if (name === "" || email === "" || number === "") {
